@@ -31,6 +31,14 @@ export const metadata: Metadata = {
     description:
       "Book more clients. Grow your brand. The all-in-one business " +
       "tool built for independent tattoo artists.",
+    images: [
+      {
+        url: "/images/brand/logo-full.webp",
+        width: 1200,
+        height: 630,
+        alt: "Tattoo Agent",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -39,6 +47,7 @@ export const metadata: Metadata = {
     description:
       "Book more clients. Grow your brand. The all-in-one business " +
       "tool built for independent tattoo artists.",
+    images: ["/images/brand/logo-full.webp"],
   },
   robots: {
     index: true,

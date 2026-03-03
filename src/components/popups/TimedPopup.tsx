@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/Button";
+import { BrandIcon } from "@/components/ui/BrandIcon";
 
 const POPUP_DELAY_MS = 45000; // 45 seconds
 const STORAGE_KEY = "timedPopupDismissed";
@@ -63,7 +64,7 @@ export function TimedPopup() {
             </button>
 
             <div className="text-center">
-              <p className="text-3xl">💀</p>
+              <BrandIcon size={48} className="mx-auto" />
               <h3 className="mt-4 font-[family-name:var(--font-lobster)] text-2xl text-cream">
                 Want to see the tool in action?
               </h3>

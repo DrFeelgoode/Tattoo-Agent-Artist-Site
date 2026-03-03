@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useExitIntent } from "@/hooks/useExitIntent";
 import { Button } from "@/components/ui/Button";
+import { BrandIcon } from "@/components/ui/BrandIcon";
 
 export function ExitIntentPopup() {
   const { triggered, dismiss } = useExitIntent();
@@ -44,7 +45,7 @@ export function ExitIntentPopup() {
             </button>
 
             <div className="text-center">
-              <p className="text-3xl">👋</p>
+              <BrandIcon size={48} className="mx-auto" />
               <h3 className="mt-4 font-[family-name:var(--font-lobster)] text-2xl text-cream">
                 Before you go...
               </h3>
