@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host
+Host: https://tattooagent.art
+
+# Sitemaps
+Sitemap: https://tattooagent.art/sitemap.xml
