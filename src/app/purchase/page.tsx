@@ -3,6 +3,7 @@ import { ParallaxImage } from "@/components/ui/ParallaxImage";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { BrandIcon } from "@/components/ui/BrandIcon";
+import { ExpandableFeatures } from "@/components/ui/ExpandableFeatures";
 import { plans } from "@/data/plans";
 import { SITE } from "@/lib/constants";
 
@@ -93,25 +94,7 @@ export default function PurchasePage() {
                 </p>
               )}
 
-              {/* Top 4 features */}
-              <ul className="mt-4 flex flex-col gap-2">
-                {plan.features.slice(0, 4).map((f) => (
-                  <li
-                    key={f.feature}
-                    className="flex items-start gap-2 text-sm"
-                  >
-                    <span className="mt-0.5 text-lime">✓</span>
-                    <span className="text-cream/80">
-                      {f.feature}
-                    </span>
-                  </li>
-                ))}
-                {plan.features.length > 4 && (
-                  <li className="text-sm text-muted">
-                    + {plan.features.length - 4} more features
-                  </li>
-                )}
-              </ul>
+              <ExpandableFeatures features={plan.features} />
 
               <div className="mt-auto pt-8">
                 {plan.isComingSoon ? (

@@ -120,6 +120,12 @@ export const plans: Plan[] = [
           "TikTok, Google — with AI that optimizes so " +
           "you're not wasting money",
       },
+      {
+        feature: "QuickBooks integration",
+        outcome:
+          "Your income and expenses sync automatically " +
+          "— tax season stops being a scramble",
+      },
     ],
     cta: { label: "Join the Waitlist", href: "/plans/growth" },
     isComingSoon: true,
