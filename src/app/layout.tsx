@@ -79,7 +79,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-black font-[family-name:var(--font-bebas-neue)] text-cream antialiased">
+      <body className="min-h-screen bg-black text-xl font-[family-name:var(--font-bebas-neue)] text-cream antialiased">
         <Navbar />
         <div className="pt-[73px]">{children}</div>
         <Footer />

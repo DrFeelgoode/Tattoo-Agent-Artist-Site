@@ -68,28 +68,28 @@ export const howItWorksSteps: HowItWorksStep[] = [
 
 export const followUpMathPoints: ValuePoint[] = [
   {
-    title: "6-month follow-ups",
+    title: "2+ extra bookings per month from 6-month follow-ups",
     description:
       "If you tattoo 20 clients a month and just 10% rebook " +
-      "from the 6-month follow-up, that's 2 extra tattoos a " +
-      "month you didn't have to chase down.",
+      "from an automatic 6-month follow-up, that's 2 extra " +
+      "tattoos a month you didn't have to chase down.",
   },
   {
-    title: "Birthday messages",
+    title: "20+ extra bookings per year from birthday messages",
     description:
       "If you have 100 past clients and 20% book from a " +
       "birthday text, that's 20 extra tattoos a year — from " +
       "a message you never wrote.",
   },
   {
-    title: "Website on Google",
+    title: "A second funnel from your website on Google",
     description:
       "Your website shows up on Google, not just Instagram. " +
-      "That's a second funnel bringing people to you that " +
-      "you didn't have before.",
+      "That's a whole new way people find you that you " +
+      "didn't have before.",
   },
   {
-    title: "Professional booking",
+    title: "Fewer drop-offs with professional booking",
     description:
       "A professional booking system means fewer people drop " +
       "off between \"I'm interested\" and \"I'm booked.\" " +
@@ -97,6 +97,24 @@ export const followUpMathPoints: ValuePoint[] = [
       "pay their deposit, and they're on your calendar.",
   },
 ];
+
+export const mathBreakdown = {
+  headline: "One extra tattoo covers the whole month",
+  subhead:
+    "Tattoo Agent costs $99/month. One extra booking — from " +
+    "an automated follow-up, a birthday text, or a client " +
+    "who found your website on Google — pays for itself.",
+  example: {
+    title:
+      "Here's what happened with one artist's contact list",
+    contacts: 417,
+    followUpRate: "2.4%",
+    extraTattoos: 10,
+    avgTattooValue: "$350",
+    monthlyRevenue: "$3,500",
+    monthlyCost: "$99",
+  },
+};
 
 export const funnelValuePoints: ValuePoint[] = [
   {

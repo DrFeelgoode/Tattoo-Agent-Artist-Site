@@ -4,7 +4,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 
 export function FounderStoryPreview() {
   return (
-    <SectionWrapper dark>
+    <SectionWrapper>
       <div className="mx-auto max-w-4xl">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           {/* Photo */}
@@ -20,10 +20,10 @@ export function FounderStoryPreview() {
 
           {/* Text */}
           <div className="text-center lg:text-left">
-            <p className="font-[family-name:var(--font-bebas-neue)] text-lg uppercase tracking-widest text-lime">
+            <p className="font-[family-name:var(--font-bebas-neue)] text-2xl uppercase tracking-widest text-lime">
               The backstory
             </p>
-            <h2 className="mt-3 font-[family-name:var(--font-lobster)] text-3xl text-cream sm:text-4xl">
+            <h2 className="mt-3 font-[family-name:var(--font-lobster)] text-4xl text-cream sm:text-5xl">
               Built for a tattoo artist,
               <br />
               by her brother

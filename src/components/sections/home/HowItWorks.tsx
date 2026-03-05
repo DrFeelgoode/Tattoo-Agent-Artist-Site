@@ -9,10 +9,10 @@ export function HowItWorks() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
       <div className="relative mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="font-[family-name:var(--font-bebas-neue)] text-lg uppercase tracking-widest text-lime">
+          <p className="font-[family-name:var(--font-bebas-neue)] text-2xl uppercase tracking-widest text-lime">
             Simple setup
           </p>
-          <h2 className="mt-3 font-[family-name:var(--font-lobster)] text-3xl text-cream sm:text-4xl">
+          <h2 className="mt-3 font-[family-name:var(--font-lobster)] text-4xl text-cream sm:text-5xl">
             How it works
           </h2>
         </div>
@@ -28,7 +28,7 @@ export function HowItWorks() {
               <h3 className="mt-4 text-xl font-bold text-cream">
                 {step.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
+              <p className="mt-2 text-base leading-relaxed text-muted">
                 {step.description}
               </p>
             </div>

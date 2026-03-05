@@ -24,5 +24,7 @@ export const testimonials: Testimonial[] = [
       "workload feels manageable, my stress is lower, and I finally " +
       "have more time to pour into my art, without sacrificing the " +
       "personal connection with my clients.",
+    websiteUrl: "https://xx-kipling-xx.art",
+    websiteName: "xx-kipling-xx.art",
   },
 ];

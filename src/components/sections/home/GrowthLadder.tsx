@@ -1,22 +1,25 @@
+"use client";
+
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { BrandIcon } from "@/components/ui/BrandIcon";
+import { ExpandableFeatures } from "@/components/ui/ExpandableFeatures";
 import { plans } from "@/data/plans";
 
 export function GrowthLadder() {
   return (
-    <SectionWrapper>
+    <SectionWrapper dark>
       <div className="text-center">
-        <p className="font-[family-name:var(--font-bebas-neue)] text-lg uppercase tracking-widest text-lime">
-          Growth Ladder
+        <p className="font-[family-name:var(--font-bebas-neue)] text-2xl uppercase tracking-widest text-lime">
+          Business Growth Ladder
         </p>
-        <h2 className="mt-3 font-[family-name:var(--font-lobster)] text-3xl text-cream sm:text-4xl">
+        <h2 className="mt-3 font-[family-name:var(--font-lobster)] text-4xl text-cream sm:text-5xl">
           Choose where you want to start
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-muted">
-          Every plan builds on the last. Start with what you need
-          now, upgrade when you&apos;re ready.
+          Every plan builds on the last. Start with what you
+          need now, upgrade when you&apos;re ready.
         </p>
       </div>
 
@@ -37,7 +40,10 @@ export function GrowthLadder() {
               </Badge>
             )}
             {plan.isComingSoon && (
-              <Badge variant="muted" className="absolute -top-3 left-6">
+              <Badge
+                variant="muted"
+                className="absolute -top-3 left-6"
+              >
                 Coming Soon
               </Badge>
             )}
@@ -46,53 +52,29 @@ export function GrowthLadder() {
               className="absolute right-6 top-6 opacity-30"
             />
 
-            <p className="mt-2 font-[family-name:var(--font-bebas-neue)] text-sm uppercase tracking-widest text-lime">
+            <p className="mt-2 font-[family-name:var(--font-bebas-neue)] text-base uppercase tracking-widest text-lime">
               Stage {plan.tier}
             </p>
             <h3 className="mt-1 text-xl font-bold text-cream">
               {plan.tagline}
             </h3>
-            <p className="text-sm text-muted">{plan.name}</p>
+            <p className="text-base text-muted">{plan.name}</p>
 
-            <div className="mt-4 flex items-baseline gap-1">
-              <span className="text-3xl font-bold text-cream">
-                {plan.price}
-              </span>
-              <span className="text-sm text-muted">
-                {plan.priceNote}
-              </span>
-            </div>
-
-            <p className="mt-3 text-sm leading-relaxed text-muted">
+            <p className="mt-3 text-base leading-relaxed text-muted">
               {plan.description}
             </p>
 
-            <ul className="mt-4 flex flex-col gap-2">
-              {plan.features.slice(0, 4).map((f) => (
-                <li
-                  key={f.feature}
-                  className="flex items-start gap-2 text-sm"
-                >
-                  <span className="mt-0.5 text-lime">✓</span>
-                  <span className="text-cream/80">
-                    {f.outcome}
-                  </span>
-                </li>
-              ))}
-              {plan.features.length > 4 && (
-                <li className="text-sm text-lime">
-                  + {plan.features.length - 4} more →
-                </li>
-              )}
-            </ul>
+            <ExpandableFeatures features={plan.features} />
 
             <div className="mt-auto pt-6">
               <Button
-                href={plan.cta.href}
-                variant={plan.tier === 1 ? "primary" : "outline"}
+                href={`/plans/${plan.id}`}
+                variant={
+                  plan.tier === 1 ? "primary" : "outline"
+                }
                 className="w-full"
               >
-                {plan.cta.label}
+                Learn More →
               </Button>
             </div>
           </div>

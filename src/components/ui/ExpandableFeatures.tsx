@@ -25,7 +25,7 @@ export function ExpandableFeatures({
       {visible.map((f) => (
         <li
           key={f.feature}
-          className="flex items-start gap-2 text-sm"
+          className="flex items-start gap-2 text-base"
         >
           <span className="mt-0.5 text-lime">✓</span>
           <span className="text-cream/80">{f.feature}</span>
@@ -35,7 +35,7 @@ export function ExpandableFeatures({
         <li>
           <button
             onClick={() => setExpanded(true)}
-            className="text-sm text-lime transition-colors hover:text-lime/80"
+            className="text-base text-lime transition-colors hover:text-lime/80"
           >
             + {features.length - previewCount} more features ▾
           </button>
@@ -45,7 +45,7 @@ export function ExpandableFeatures({
         <li>
           <button
             onClick={() => setExpanded(false)}
-            className="text-sm text-muted transition-colors hover:text-lime"
+            className="text-base text-muted transition-colors hover:text-lime"
           >
             Show less ▴
           </button>
