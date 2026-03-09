@@ -11,6 +11,18 @@ export function WelcomeGate() {
 
   useEffect(() => {
     if (sessionStorage.getItem(STORAGE_KEY)) return;
+
+    // Skip the gate if visitor was referred from tattoo-agent.com
+    try {
+      const referrer = new URL(document.referrer);
+      if (referrer.hostname.includes("tattoo-agent.com")) {
+        sessionStorage.setItem(STORAGE_KEY, "true");
+        return;
+      }
+    } catch {
+      // No referrer or invalid URL — continue normally
+    }
+
     const timer = setTimeout(() => setIsVisible(true), 0);
     return () => clearTimeout(timer);
   }, []);
