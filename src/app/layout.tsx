@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { inter, lobster, bebasNeue } from "@/lib/fonts";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { WelcomeGate } from "@/components/popups/WelcomeGate";
 import { TimedPopup } from "@/components/popups/TimedPopup";
 import { ExitIntentPopup } from "@/components/popups/ExitIntentPopup";
 import {
@@ -83,6 +84,7 @@ export default function RootLayout({
         <Navbar />
         <div className="pt-[73px]">{children}</div>
         <Footer />
+        <WelcomeGate />
         <TimedPopup />
         <ExitIntentPopup />
       </body>

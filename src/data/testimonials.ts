@@ -27,4 +27,17 @@ export const testimonials: Testimonial[] = [
     websiteUrl: "https://xx-kipling-xx.art",
     websiteName: "xx-kipling-xx.art",
   },
+  {
+    name: "Kamila Fuentes",
+    handle: "@ink.jinx",
+    instagramUrl: "https://www.instagram.com/ink.jinx/",
+    quote:
+      "Garrett has been very attentive and helpful with the whole " +
+      "onboarding and set up process for Tattoo Agent. With how easy " +
+      "it has been for DMs to slip through the cracks, the way Tattoo " +
+      "Agent streamlines the whole process is incredibly helpful. I " +
+      "feel way more efficient as an artist and business person.",
+    websiteUrl: "https://inkjinx.com",
+    websiteName: "inkjinx.com",
+  },
 ];

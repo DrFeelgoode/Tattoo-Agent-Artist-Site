@@ -14,7 +14,7 @@ export function SocialProof() {
         </h2>
       </div>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((t) => (
           <TestimonialCard key={t.handle} testimonial={t} />
         ))}

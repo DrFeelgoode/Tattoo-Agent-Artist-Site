@@ -14,8 +14,8 @@ const artistSites = [
     url: "https://xx-kipling-xx.art",
   },
   {
-    name: "Ink Jinx",
-    handle: "@inkjinx",
+    name: "Kamila Fuentes",
+    handle: "@ink.jinx",
     url: "https://inkjinx.com",
   },
 ];
