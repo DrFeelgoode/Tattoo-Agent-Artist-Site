@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { inter, lobster, bebasNeue } from "@/lib/fonts";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WelcomeGate } from "@/components/popups/WelcomeGate";
 import { TimedPopup } from "@/components/popups/TimedPopup";
 import { ExitIntentPopup } from "@/components/popups/ExitIntentPopup";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { MicrosoftClarity } from "@/components/analytics/MicrosoftClarity";
 import {
   getOrganizationJsonLd,
   getProductJsonLd,
@@ -87,6 +91,10 @@ export default function RootLayout({
         <WelcomeGate />
         <TimedPopup />
         <ExitIntentPopup />
+        <Analytics />
+        <SpeedInsights />
+        <GoogleAnalytics />
+        <MicrosoftClarity />
       </body>
     </html>
   );

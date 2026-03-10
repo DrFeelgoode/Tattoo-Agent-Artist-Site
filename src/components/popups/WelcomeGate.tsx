@@ -10,13 +10,13 @@ export function WelcomeGate() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (sessionStorage.getItem(STORAGE_KEY)) return;
+    if (localStorage.getItem(STORAGE_KEY)) return;
 
     // Skip the gate if visitor was referred from tattoo-agent.com
     try {
       const referrer = new URL(document.referrer);
       if (referrer.hostname.includes("tattoo-agent.com")) {
-        sessionStorage.setItem(STORAGE_KEY, "true");
+        localStorage.setItem(STORAGE_KEY, "true");
         return;
       }
     } catch {
@@ -28,12 +28,12 @@ export function WelcomeGate() {
   }, []);
 
   const handleArtist = () => {
-    sessionStorage.setItem(STORAGE_KEY, "true");
+    localStorage.setItem(STORAGE_KEY, "true");
     setIsVisible(false);
   };
 
   const handleClient = () => {
-    sessionStorage.setItem(STORAGE_KEY, "true");
+    localStorage.setItem(STORAGE_KEY, "true");
     setIsVisible(false);
     window.location.href = "https://tattoo-agent.com";
   };
