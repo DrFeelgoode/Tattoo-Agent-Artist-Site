@@ -1,10 +1,36 @@
-# *
+# All crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
+
+# AI Crawlers — welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
 
 # Host
 Host: https://tattooagent.art
 
 # Sitemaps
 Sitemap: https://tattooagent.art/sitemap.xml
+
+# LLM Information
+# https://tattooagent.art/llms.txt
+# https://tattooagent.art/llms-full.txt

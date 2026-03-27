@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main>
+    <div>
       {/* Hero */}
       <section className="relative overflow-hidden px-4 py-24 text-center sm:px-6 lg:px-8">
         <ParallaxImage src="/images/tattoos/tattoo-12.webp" opacity={0.45} />
@@ -187,6 +187,6 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

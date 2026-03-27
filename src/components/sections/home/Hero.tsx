@@ -4,8 +4,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { ParallaxImage } from "@/components/ui/ParallaxImage";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 export function Hero() {
+  const prefersReducedMotion = useReducedMotion();
+  const instant = { duration: 0 };
+
   return (
     <section className="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden px-4 py-24 text-center sm:px-6 lg:px-8">
       {/* Single bold background image with parallax */}
@@ -20,9 +24,15 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-4xl">
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={
+            prefersReducedMotion
+              ? false
+              : { opacity: 0, scale: 0.8 }
+          }
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={
+            prefersReducedMotion ? instant : { duration: 0.5 }
+          }
           className="mb-6"
         >
           <Image
@@ -35,9 +45,15 @@ export function Hero() {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
+          initial={
+            prefersReducedMotion
+              ? false
+              : { opacity: 0, y: 20 }
+          }
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={
+            prefersReducedMotion ? instant : { duration: 0.6 }
+          }
           className="font-[family-name:var(--font-lobster)] text-4xl leading-tight text-cream sm:text-5xl md:text-6xl lg:text-7xl"
         >
           Book More Clients.
@@ -48,9 +64,17 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={
+            prefersReducedMotion
+              ? false
+              : { opacity: 0, y: 20 }
+          }
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={
+            prefersReducedMotion
+              ? instant
+              : { duration: 0.6, delay: 0.2 }
+          }
           className="mx-auto mt-6 max-w-2xl text-lg text-muted sm:text-xl"
         >
           The all-in-one tool built for independent tattoo artists.
@@ -58,9 +82,17 @@ export function Hero() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={
+            prefersReducedMotion
+              ? false
+              : { opacity: 0, y: 20 }
+          }
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={
+            prefersReducedMotion
+              ? instant
+              : { duration: 0.6, delay: 0.4 }
+          }
           className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
           <Button href="/pricing" size="lg">

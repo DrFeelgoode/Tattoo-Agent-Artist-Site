@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/Button";
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-[70vh] flex-col items-center justify-center px-4 text-center">
+    <div className="flex min-h-[70vh] flex-col items-center justify-center px-4 text-center">
       <span className="text-6xl">💀</span>
       <h1 className="mt-6 font-[family-name:var(--font-lobster)] text-5xl text-cream">
         404
@@ -16,6 +16,6 @@ export default function NotFound() {
           Contact Us
         </Button>
       </div>
-    </main>
+    </div>
   );
 }

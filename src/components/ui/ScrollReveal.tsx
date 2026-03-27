@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { cn } from "@/lib/utils";
 
 interface ScrollRevealProps {
@@ -28,6 +29,11 @@ export function ScrollReveal({
   duration = 0.5,
 }: ScrollRevealProps) {
   const { ref, isVisible } = useScrollReveal();
+  const prefersReducedMotion = useReducedMotion();
+
+  if (prefersReducedMotion) {
+    return <div className={cn(className)}>{children}</div>;
+  }
 
   return (
     <motion.div

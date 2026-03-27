@@ -3,12 +3,17 @@
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useExitIntent } from "@/hooks/useExitIntent";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 import { Button } from "@/components/ui/Button";
 import { BrandIcon } from "@/components/ui/BrandIcon";
 
 export function ExitIntentPopup() {
   const { triggered, dismiss } = useExitIntent();
   const router = useRouter();
+  const trapRef = useFocusTrap<HTMLDivElement>(
+    triggered,
+    dismiss,
+  );
 
   const handleCTA = () => {
     dismiss();
@@ -26,10 +31,15 @@ export function ExitIntentPopup() {
             exit={{ opacity: 0 }}
             onClick={dismiss}
             className="fixed inset-0 z-[100] bg-black/70"
+            aria-hidden="true"
           />
 
           {/* Popup — centered */}
           <motion.div
+            ref={trapRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="exit-popup-title"
             initial={{ opacity: 0, scale: 0.95, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
@@ -46,7 +56,10 @@ export function ExitIntentPopup() {
 
             <div className="text-center">
               <BrandIcon size={48} className="mx-auto" />
-              <h3 className="mt-4 font-[family-name:var(--font-lobster)] text-2xl text-cream">
+              <h3
+                id="exit-popup-title"
+                className="mt-4 font-[family-name:var(--font-lobster)] text-2xl text-cream"
+              >
                 Before you go...
               </h3>
               <p className="mt-3 text-sm text-muted">

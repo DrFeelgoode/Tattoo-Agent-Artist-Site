@@ -11,7 +11,8 @@ import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { MicrosoftClarity } from "@/components/analytics/MicrosoftClarity";
 import {
   getOrganizationJsonLd,
-  getProductJsonLd,
+  getSoftwareApplicationJsonLd,
+  getWebSiteJsonLd,
 } from "@/lib/structured-data";
 import "./globals.css";
 
@@ -24,8 +25,23 @@ export const metadata: Metadata = {
   description:
     "Book more clients. Grow your brand. The all-in-one business " +
     "tool built for independent tattoo artists. Website, booking, " +
-    "payments, marketing — one tool.",
+    "payments, marketing, CRM — one tool, $99/month.",
+  keywords: [
+    "tattoo artist business tool",
+    "tattoo booking software",
+    "tattoo artist website builder",
+    "tattoo business management",
+    "tattoo appointment scheduling",
+    "tattoo artist CRM",
+    "tattoo marketing automation",
+    "tattoo deposit collection",
+    "independent tattoo artist tools",
+    "tattoo aftercare automation",
+  ],
   metadataBase: new URL("https://tattooagent.art"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -35,13 +51,13 @@ export const metadata: Metadata = {
       "Tattoo Agent — The All-in-One Tool for Tattoo Artists",
     description:
       "Book more clients. Grow your brand. The all-in-one business " +
-      "tool built for independent tattoo artists.",
+      "tool built for independent tattoo artists. $99/month.",
     images: [
       {
         url: "/images/brand/logo-full.webp",
         width: 1200,
         height: 630,
-        alt: "Tattoo Agent",
+        alt: "Tattoo Agent — All-in-one tattoo artist business tool",
       },
     ],
   },
@@ -51,13 +67,21 @@ export const metadata: Metadata = {
       "Tattoo Agent — The All-in-One Tool for Tattoo Artists",
     description:
       "Book more clients. Grow your brand. The all-in-one business " +
-      "tool built for independent tattoo artists.",
+      "tool built for independent tattoo artists. $99/month.",
     images: ["/images/brand/logo-full.webp"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
+  category: "technology",
 };
 
 export default function RootLayout({
@@ -80,13 +104,26 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getProductJsonLd()),
+            __html: JSON.stringify(
+              getSoftwareApplicationJsonLd(),
+            ),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getWebSiteJsonLd()),
           }}
         />
       </head>
       <body className="min-h-screen bg-black text-xl font-[family-name:var(--font-bebas-neue)] text-cream antialiased">
+        <a href="#main-content" className="skip-to-content">
+          Skip to main content
+        </a>
         <Navbar />
-        <div className="pt-[73px]">{children}</div>
+        <main id="main-content" className="pt-[73px]">
+          {children}
+        </main>
         <Footer />
         <WelcomeGate />
         <TimedPopup />

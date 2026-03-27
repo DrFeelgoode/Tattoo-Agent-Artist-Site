@@ -64,6 +64,17 @@ export function GrowthLadder() {
               {plan.description}
             </p>
 
+            {plan.tier === 2 && (
+              <p className="mt-3 text-sm font-medium text-lime/80">
+                Everything in Stage 1, plus:
+              </p>
+            )}
+            {plan.tier === 3 && (
+              <p className="mt-3 text-sm font-medium text-lime/80">
+                Everything in Stages 1 & 2, plus:
+              </p>
+            )}
+
             <ExpandableFeatures features={plan.features} />
 
             <div className="mt-auto pt-6">

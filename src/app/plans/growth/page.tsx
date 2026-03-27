@@ -3,20 +3,34 @@ import { ParallaxImage } from "@/components/ui/ParallaxImage";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Badge } from "@/components/ui/Badge";
 import { FormEmbed } from "@/components/ui/FormEmbed";
+import { getBreadcrumbJsonLd } from "@/lib/structured-data";
 import { plans } from "@/data/plans";
 
 export const metadata: Metadata = {
   title: "Artist Growth — $399/month (Coming Soon)",
   description:
     "Grow your brand and revenue beyond the chair. Merch store, " +
-    "AI assistant, and ad campaign management. Coming soon.",
+    "AI assistant, ad campaigns, and QuickBooks integration " +
+    "for tattoo artists. Coming soon.",
 };
 
 export default function GrowthPage() {
   const plan = plans.find((p) => p.id === "growth")!;
 
   return (
-    <main>
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getBreadcrumbJsonLd([
+              { name: "Home", href: "/" },
+              { name: "Pricing", href: "/pricing" },
+              { name: "Artist Growth", href: "/plans/growth" },
+            ]),
+          ),
+        }}
+      />
       <section className="relative overflow-hidden px-4 py-24 text-center sm:px-6 lg:px-8">
         <ParallaxImage src="/images/tattoos/tattoo-6.webp" opacity={0.45} />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
@@ -89,6 +103,6 @@ export default function GrowthPage() {
           </div>
         </div>
       </SectionWrapper>
-    </main>
+    </div>
   );
 }

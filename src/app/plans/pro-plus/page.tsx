@@ -3,20 +3,34 @@ import { ParallaxImage } from "@/components/ui/ParallaxImage";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Badge } from "@/components/ui/Badge";
 import { FormEmbed } from "@/components/ui/FormEmbed";
+import { getBreadcrumbJsonLd } from "@/lib/structured-data";
 import { plans } from "@/data/plans";
 
 export const metadata: Metadata = {
   title: "Artist Pro+ — $1,499/month (Coming Soon)",
   description:
-    "The done-for-you tier. You tattoo, we handle everything " +
-    "else. Managed social media, ads, client interactions, and more.",
+    "The done-for-you tier for tattoo artists. You tattoo, we " +
+    "handle everything else. Managed social media, ads, client " +
+    "interactions, and more. Coming soon.",
 };
 
 export default function ProPlusPage() {
   const plan = plans.find((p) => p.id === "pro-plus")!;
 
   return (
-    <main>
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getBreadcrumbJsonLd([
+              { name: "Home", href: "/" },
+              { name: "Pricing", href: "/pricing" },
+              { name: "Artist Pro+", href: "/plans/pro-plus" },
+            ]),
+          ),
+        }}
+      />
       <section className="relative overflow-hidden px-4 py-24 text-center sm:px-6 lg:px-8">
         <ParallaxImage src="/images/tattoos/tattoo-15.webp" opacity={0.45} />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
@@ -89,6 +103,6 @@ export default function ProPlusPage() {
           </div>
         </div>
       </SectionWrapper>
-    </main>
+    </div>
   );
 }

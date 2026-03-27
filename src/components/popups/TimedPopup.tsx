@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 import { Button } from "@/components/ui/Button";
 import { BrandIcon } from "@/components/ui/BrandIcon";
 
@@ -13,8 +14,17 @@ export function TimedPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const router = useRouter();
 
+  const dismiss = useCallback(() => {
+    setIsVisible(false);
+    sessionStorage.setItem(STORAGE_KEY, "true");
+  }, []);
+
+  const trapRef = useFocusTrap<HTMLDivElement>(
+    isVisible,
+    dismiss,
+  );
+
   useEffect(() => {
-    // Don't show if already dismissed this session
     if (sessionStorage.getItem(STORAGE_KEY)) return;
 
     const timer = setTimeout(() => {
@@ -23,11 +33,6 @@ export function TimedPopup() {
 
     return () => clearTimeout(timer);
   }, []);
-
-  const dismiss = () => {
-    setIsVisible(false);
-    sessionStorage.setItem(STORAGE_KEY, "true");
-  };
 
   const handleCTA = () => {
     dismiss();
@@ -45,10 +50,15 @@ export function TimedPopup() {
             exit={{ opacity: 0 }}
             onClick={dismiss}
             className="fixed inset-0 z-[100] bg-black/70"
+            aria-hidden="true"
           />
 
           {/* Popup — centered */}
           <motion.div
+            ref={trapRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="timed-popup-title"
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -65,7 +75,10 @@ export function TimedPopup() {
 
             <div className="text-center">
               <BrandIcon size={48} className="mx-auto" />
-              <h3 className="mt-4 font-[family-name:var(--font-lobster)] text-2xl text-cream">
+              <h3
+                id="timed-popup-title"
+                className="mt-4 font-[family-name:var(--font-lobster)] text-2xl text-cream"
+              >
                 Want to see the tool in action?
               </h3>
               <p className="mt-3 text-sm text-muted">

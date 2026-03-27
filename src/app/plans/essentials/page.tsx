@@ -3,6 +3,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { ParallaxImage } from "@/components/ui/ParallaxImage";
+import { getBreadcrumbJsonLd } from "@/lib/structured-data";
 import { plans } from "@/data/plans";
 
 export const metadata: Metadata = {
@@ -10,14 +11,29 @@ export const metadata: Metadata = {
   description:
     "Everything to run a professional tattoo business. Website, " +
     "booking, payments, messaging, marketing, and client " +
-    "management in one tool.",
+    "management in one tool. Built for independent tattoo artists.",
 };
 
 export default function EssentialsPage() {
   const plan = plans.find((p) => p.id === "essentials")!;
 
   return (
-    <main>
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getBreadcrumbJsonLd([
+              { name: "Home", href: "/" },
+              { name: "Pricing", href: "/pricing" },
+              {
+                name: "Artist Essentials",
+                href: "/plans/essentials",
+              },
+            ]),
+          ),
+        }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden px-4 py-24 text-center sm:px-6 lg:px-8">
         <ParallaxImage src="/images/tattoos/tattoo-8.webp" opacity={0.45} />
@@ -173,6 +189,6 @@ export default function EssentialsPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

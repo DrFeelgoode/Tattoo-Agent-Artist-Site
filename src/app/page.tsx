@@ -20,7 +20,7 @@ import { faqItems } from "@/data/faq";
 
 export default function HomePage() {
   return (
-    <main>
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -99,6 +99,6 @@ export default function HomePage() {
 
       {/* Sticky mobile CTA — fixed positioning */}
       <StickyMobileCTA />
-    </main>
+    </div>
   );
 }

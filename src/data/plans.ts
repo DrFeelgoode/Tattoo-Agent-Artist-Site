@@ -108,10 +108,10 @@ export const plans: Plan[] = [
           "earning while you sleep",
       },
       {
-        feature: "AI assistant for clients",
+        feature: "AI business assistant",
         outcome:
-          "Clients get instant answers about aftercare, " +
-          "pricing, and booking — even at 2am",
+          "24/7 client questions answered, booking help, " +
+          "aftercare info, and pricing — even at 2am",
       },
       {
         feature: "AI-powered ad campaigns",

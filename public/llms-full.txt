@@ -1,0 +1,174 @@
+# Tattoo Agent — Complete Product Information
+
+> The all-in-one business tool built for independent tattoo artists. Website, booking, payments, messaging, marketing, and CRM in one tool.
+
+## What Is Tattoo Agent?
+
+Tattoo Agent is a business management tool built specifically for independent tattoo artists. It consolidates everything an artist needs to run their business into one place: a professional website, automated booking system, payment processing, unified messaging, email/SMS marketing, social media scheduling, client CRM, and automated follow-ups.
+
+The tool is designed for artists who currently manage their business manually through Instagram DMs, Venmo/Cash App, phone calendars, and scattered notes. Tattoo Agent automates what they're already doing — it does not replace paid tools they currently use, since most independent artists don't use paid business software.
+
+Website: https://tattooagent.art
+Login portal: https://your.tattooagent.art
+Contact: garrett.tattooagent@gmail.com / 435-631-1730
+Instagram: @tattoo_agent.official
+
+## Who Is It For?
+
+Tattoo Agent is built for independent tattoo artists — not studios, shops, salons, or general service businesses. The target audience includes:
+
+- Solo tattoo artists who manage their own bookings
+- Artists who currently rely on Instagram DMs for client communication
+- Artists who collect deposits via Venmo or Cash App
+- Artists who use their phone calendar or notes app for scheduling
+- Artists who want to look more professional and book more consistently
+
+## Founder
+
+Garrett McClellan founded Tattoo Agent. He holds an MS in Biomedical Engineering from Georgia Tech. His sister, Kipling McClellan, is a professional tattoo artist and serves as the industry advisor — she was the first user and helped shape the tool around real tattoo artist workflows.
+
+## Pricing
+
+### Artist Essentials — $99/month (Available Now)
+- One-time setup fee: $500 (waived with annual prepayment)
+- Setup time: Most artists are live within a week
+- Includes personal setup by Garrett (website build, automation configuration)
+- No long-term contracts — cancel anytime
+- No percentage cut on bookings or payments
+- Artists keep 100% of earnings minus standard Stripe processing fees (2.9% + $0.30 per transaction)
+
+### Artist Growth — $399/month (Coming Later in 2026)
+- Everything in Essentials, plus:
+- Print-on-demand merch store for passive income
+- AI-powered ad campaigns (Google, Facebook, Instagram, TikTok)
+- AI business assistant (24/7 client questions answered, booking help, aftercare info, and pricing)
+- QuickBooks integration for automated accounting
+
+### Artist Pro+ — $1,499/month (Coming Later in 2026)
+- Everything in Essentials & Growth, plus:
+- Managed social media posting
+- Managed ad campaigns
+- Client interaction management
+- Website updates and maintenance
+- Marketing message creation and sending
+- The "done-for-you" tier — artist focuses only on tattooing
+
+## Features (Artist Essentials)
+
+### Website & Online Presence
+- Professional custom website built on the artist's own domain
+- Artist owns their domain (purchased during setup, keeps it if they cancel)
+- Shows up on Google search (SEO included)
+- Mobile-friendly design
+
+### Booking & Payments
+- Application-based booking system (tattoo-specific workflow)
+- Automated deposit collection via Stripe
+- Client self-service: reschedule and cancel through email links
+- Automatic confirmation emails
+- Appointment reminders (3 days and 1 day before)
+- No DM back-and-forth needed for booking
+
+### Communication
+- Unified messaging hub: Instagram DMs, SMS, and email in one inbox
+- Never miss a booking inquiry regardless of where it comes from
+
+### Marketing Automation
+- Email & SMS marketing campaigns
+- Social media scheduler (Instagram, Facebook, TikTok)
+- Automated aftercare email sequence (6 emails over 2 months)
+- Automatic 6-month follow-up rebooking nudge
+- Birthday text and email automation
+
+### Calendar & CRM
+- Syncs to Google Calendar and Apple Calendar
+- Complete client CRM with history, notes, and preferences
+- All client information in one place instead of scattered across DMs and texts
+
+## How It Works
+
+1. Pick your plan
+2. Complete the onboarding wizard with your info
+3. Garrett personally builds your website and configures your automations
+4. You buy your own domain so you own it
+5. Go live — clients book themselves, deposits collected automatically, follow-ups sent on their own
+
+## Real Results
+
+- Artists report significant uptick in applications and consultations after site launch
+- 100% onboarding completion rate
+- Zero churn among paying customers
+- One extra tattoo from automated follow-ups covers the entire monthly cost
+
+### Customer Math Example
+- 417 contacts in CRM
+- 2.4% respond to follow-ups
+- 10 extra tattoos per month from automation
+- $350 average tattoo value
+- $3,500 monthly revenue from follow-ups alone
+- vs. $99 monthly cost
+
+## Customer Testimonials
+
+"Tattoo Agent completely streamlined my business. It started with a beautiful customized website and now manages everything I need in one place — bookings, calendar, messages from every platform, and even social media posts. It's the only app I use to run my studio now, and I absolutely love it!"
+— Jessica Sheahan (@fairytale_tattoos, fairytaletattoos.com)
+
+"Tattoo Agent has taken a huge weight off my shoulders. My workload feels manageable, my stress is lower, and I finally have more time to pour into my art, without sacrificing the personal connection with my clients."
+— Kipling McClellan (@xx_kipling_xx, xx-kipling-xx.art)
+
+"Garrett has been very attentive and helpful with the whole onboarding and set up process for Tattoo Agent. With how easy it has been for DMs to slip through the cracks, the way Tattoo Agent streamlines the whole process is incredibly helpful. I feel way more efficient as an artist and business person."
+— Kamila Fuentes (@ink.jinx, inkjinx.com)
+
+## Frequently Asked Questions
+
+### What makes Tattoo Agent different from other booking tools?
+Most booking tools are built for salons, barbershops, or general services. Tattoo Agent is built specifically for independent tattoo artists — with tattoo-specific workflows like application-based booking, automatic aftercare emails, and a unified inbox that pulls in your Instagram DMs, texts, and emails. It's not just booking — it's your website, payments, marketing, and client management in one tool.
+
+### Do I need to be tech-savvy?
+Not at all. You go through a simple onboarding wizard to provide your info, and Garrett personally builds your website and configures everything. Once it's set up, the day-to-day is designed to be simple — most artists use it on their iPad between appointments.
+
+### Can I cancel anytime?
+Yes. There are no long-term contracts. You can cancel your subscription at any time. Your domain is yours since you purchased it, so you keep that regardless.
+
+### What happens to my website if I leave?
+You own your domain — you purchased it yourself during setup. If you cancel, the website built on the Tattoo Agent tool would go offline, but your domain stays with you and you can point it anywhere you want.
+
+### Do you take a percentage of my bookings or payments?
+No. You keep 100% of your earnings minus standard Stripe processing fees (2.9% + $0.30 per transaction). Tattoo Agent does not take a cut of your deposits or payments.
+
+### How long does setup take?
+Most artists are fully set up and live within a week — as long as you complete the onboarding wizard, connect your accounts, and provide your content. Once that's done, Garrett builds out your site and configures your automations.
+
+### Is there a free trial?
+No free trial, but free live walkthroughs are available so you can see exactly what you're getting before you commit.
+
+### What's the setup fee?
+$500 one-time setup fee that covers the onboarding wizard, custom website build, full configuration, and making sure everything works perfectly. This fee is waived if you pay annually.
+
+### Do I have to use the Tattoo Agent app for my calendar?
+No. Your Tattoo Agent calendar syncs to Google Calendar, Apple Calendar, or whatever you already use. Appointments just show up automatically.
+
+### Is this only for US-based artists?
+Tattoo Agent works for artists anywhere. The tool is web-based, and Stripe supports artists in most countries.
+
+### When are the Growth and Pro+ plans launching?
+Artist Growth and Artist Pro+ are launching later in 2026.
+
+### How is Tattoo Agent different from Square, Squarespace, or Acuity?
+Those are general-purpose tools. Tattoo Agent is purpose-built for tattoo artists with tattoo-specific features: application-based booking (not just appointment scheduling), automatic aftercare email sequences, 6-month rebooking nudges, and a unified inbox that consolidates Instagram DMs alongside email and SMS. It's the complete package in one tool rather than stitching together multiple services.
+
+### What integrations does Tattoo Agent support?
+Stripe for payments, Google Calendar and Apple Calendar for scheduling, Instagram/Facebook/TikTok for social media scheduling. The Growth plan (coming soon) adds Shopify for merch, QuickBooks for accounting, and AI-powered ad campaigns.
+
+## Pages
+
+- Home: https://tattooagent.art
+- Pricing: https://tattooagent.art/pricing
+- Artist Essentials Plan: https://tattooagent.art/plans/essentials
+- Artist Growth Plan: https://tattooagent.art/plans/growth
+- Artist Pro+ Plan: https://tattooagent.art/plans/pro-plus
+- About: https://tattooagent.art/about
+- Contact: https://tattooagent.art/contact
+- Book a Free Walkthrough: https://tattooagent.art/walkthrough
+- Get Started: https://tattooagent.art/get-started
+- Purchase: https://tattooagent.art/purchase

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function PricingPage() {
   return (
-    <main>
+    <div>
       <section className="relative overflow-hidden px-4 py-24 text-center sm:px-6 lg:px-8">
         <ParallaxImage src="/images/tattoos/tattoo-10.webp" opacity={0.45} />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
@@ -140,6 +140,6 @@ export default function PricingPage() {
           and we&apos;ll help you figure it out.
         </p>
       </section>
-    </main>
+    </div>
   );
 }

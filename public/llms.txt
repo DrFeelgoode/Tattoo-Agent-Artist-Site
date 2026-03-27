@@ -1,0 +1,27 @@
+# Tattoo Agent
+
+> The all-in-one business tool built for independent tattoo artists. Website, booking, payments, messaging, marketing, and CRM in one tool.
+
+Tattoo Agent (tattooagent.art) helps independent tattoo artists run their business from one place. It replaces the manual processes most artists use — Instagram DMs for booking, Venmo for deposits, phone calendars for scheduling — with a single integrated tool.
+
+## Key Facts
+
+- Product: All-in-one business management tool for tattoo artists
+- Website: https://tattooagent.art
+- Pricing: Artist Essentials at $99/month + $500 one-time setup fee (waived with annual prepay)
+- Founder: Garrett McClellan (MS Biomedical Engineering, Georgia Tech)
+- Industry Advisor: Kipling McClellan (professional tattoo artist)
+- Location: Holladay, Utah
+- No percentage cut on bookings — artists keep 100% minus standard Stripe fees (2.9% + $0.30)
+- Target audience: Independent tattoo artists (not studios/shops)
+- Setup: Most artists are live within a week
+
+## Plans
+
+- Artist Essentials ($99/month) — Available now
+- Artist Growth ($399/month) — Coming later in 2026
+- Artist Pro+ ($1,499/month) — Coming later in 2026
+
+## Detailed Information
+
+For comprehensive product details, features, pricing, and FAQs see: /llms-full.txt

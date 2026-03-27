@@ -95,4 +95,53 @@ export const faqItems: FAQItem[] = [
       "Join the waitlist on their respective pages for early access " +
       "and launch pricing.",
   },
+  {
+    question:
+      "How is Tattoo Agent different from Square, " +
+      "Squarespace, or Acuity?",
+    answer:
+      "Those are general-purpose tools. Tattoo Agent is purpose-built " +
+      "for tattoo artists with tattoo-specific features: " +
+      "application-based booking (not just appointment scheduling), " +
+      "automatic aftercare email sequences, 6-month rebooking " +
+      "nudges, and a unified inbox that consolidates Instagram DMs " +
+      "alongside email and SMS. It's the complete package in one " +
+      "tool rather than stitching together multiple services.",
+  },
+  {
+    question: "What integrations does Tattoo Agent support?",
+    answer:
+      "Stripe for payment processing, Google Calendar and Apple " +
+      "Calendar for scheduling, and Instagram, Facebook, and TikTok " +
+      "for social media scheduling. The Growth plan (coming soon) " +
+      "adds Shopify for merch, QuickBooks for accounting, and " +
+      "AI-powered ad campaigns across Google, Facebook, Instagram, " +
+      "and TikTok.",
+  },
+  {
+    question:
+      "What's included in the $99/month Essentials plan?",
+    answer:
+      "Everything you need to run your tattoo business: a " +
+      "professional custom website on your own domain, automated " +
+      "booking with deposit collection, unified messaging " +
+      "(Instagram DMs, texts, emails in one inbox), email and SMS " +
+      "marketing, social media scheduling, automated aftercare " +
+      "emails, 6-month follow-up nudges, birthday messages, " +
+      "calendar sync, client CRM, and Stripe payment processing " +
+      "with no platform fee.",
+  },
+  {
+    question:
+      "Can Tattoo Agent help me get more clients?",
+    answer:
+      "Yes — in multiple ways. Your professional website shows up " +
+      "on Google, giving you a second discovery channel beyond " +
+      "Instagram. Automated follow-ups bring past clients back " +
+      "for more ink. Birthday messages drive repeat bookings " +
+      "without any effort. And a professional booking system " +
+      "means fewer people drop off between \"interested\" and " +
+      "\"booked.\" One artist saw 10 extra bookings per month " +
+      "from automated follow-ups alone.",
+  },
 ];

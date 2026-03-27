@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function GetStartedPage() {
   return (
-    <main>
+    <div>
       {/* Funnel Hero */}
       <section className="relative overflow-hidden px-4 py-24 text-center sm:px-6 lg:px-8">
         {/* Background tattoo image */}
@@ -107,6 +107,6 @@ export default function GetStartedPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

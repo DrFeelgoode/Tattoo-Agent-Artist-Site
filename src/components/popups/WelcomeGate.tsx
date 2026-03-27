@@ -2,12 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 import { BrandIcon } from "@/components/ui/BrandIcon";
 
 const STORAGE_KEY = "welcomeGateDismissed";
 
 export function WelcomeGate() {
   const [isVisible, setIsVisible] = useState(false);
+  const trapRef = useFocusTrap<HTMLDivElement>(isVisible);
 
   useEffect(() => {
     if (localStorage.getItem(STORAGE_KEY)) return;
@@ -48,10 +50,15 @@ export function WelcomeGate() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[200] bg-black/80 backdrop-blur-md"
+            aria-hidden="true"
           />
 
           {/* Popup */}
           <motion.div
+            ref={trapRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="welcome-gate-title"
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
@@ -60,7 +67,10 @@ export function WelcomeGate() {
           >
             <div className="text-center">
               <BrandIcon size={56} className="mx-auto" />
-              <h2 className="mt-5 font-[family-name:var(--font-lobster)] text-3xl text-cream sm:text-4xl">
+              <h2
+                id="welcome-gate-title"
+                className="mt-5 font-[family-name:var(--font-lobster)] text-3xl text-cream sm:text-4xl"
+              >
                 Welcome to Tattoo Agent
               </h2>
               <p className="mt-3 text-base text-muted">
