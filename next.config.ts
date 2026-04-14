@@ -22,6 +22,13 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/webp"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.youtube.com",
+        pathname: "/vi/**",
+      },
+    ],
   },
   reactStrictMode: true,
   async headers() {

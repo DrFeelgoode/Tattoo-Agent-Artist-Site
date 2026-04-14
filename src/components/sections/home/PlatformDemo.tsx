@@ -18,8 +18,10 @@ export function PlatformDemo() {
       </div>
 
       <div className="mx-auto mt-10 max-w-4xl">
-        {/* Replace videoId with actual YouTube ID when available */}
-        <VideoEmbed />
+        <VideoEmbed
+          videoId="w3-azHLJ4dg"
+          title="Tattoo Agent walkthrough"
+        />
       </div>
     </SectionWrapper>
   );
